@@ -42,7 +42,7 @@
   <header class="sec_bg w-full h-24 border border-sec_bg  backdrop-saturate-200 sec_bg/30  sticky top-0 ">
     <!-- navbar section start -->
     <nav class=" my-6 mx-3 lg:mx-36 flex justify-between">
-      <button
+      <button id="Blog_btn"
         class=" bnt_primary lg:py-3 lg:px-8 rounded-md lg:font-semibold lg:btn_font py-2 px-4 font-bold">Blog</button>
 
       <div class="flex items-center">
@@ -84,6 +84,9 @@
           </p>
           <input id="donate_input_first" type="text" placeholder="Write Donation Amount"
             class="input input-bordered lg:w-full w-full " />
+          <p id="donate_error_first" class="text-red-500 text-xs mt-1 hidden">
+            ⚠️ Invalid !
+          </p>
           <button id="donate_btn_first"
             class="bnt_primary lg:w-full w-full py-4 lg:px-48 btn_font rounded-md font-semibold">Donate
             Now</button>
@@ -110,6 +113,9 @@
           </p>
           <input id="donate_input_sec" type="text" placeholder="Write Donation Amount"
             class="input input-bordered lg:w-full w-full" />
+          <p id="donate_error_sec" class="text-red-500 text-xs mt-1 hidden">
+            ⚠️ Invalid !
+          </p>
           <button id="donate_btn_sec"
             class="bnt_primary  btn_font rounded-md font-semibold lg:w-full w-full py-4 lg:px-48">Donate
             Now</button>
@@ -136,6 +142,9 @@
           </p>
           <input id="donate_input_three" type="text" placeholder="Write Donation Amount"
             class="input input-bordered w-full " />
+          <p id="donate_error_three" class="text-red-500 text-xs mt-1 hidden">
+            ⚠️ Invalid !
+          </p>
           <button id="donate_btn_three"
             class="bnt_primary w-full py-4 lg:px-48 btn_font rounded-md font-semibold">Donate Now</button>
         </div>
@@ -144,14 +153,14 @@
   </main>
   <!-- history section -->
 
-  <div id="history_area" class="mx-auto mt-8 w-10/12 border border-gary-500 rounded-md">
+  <div id="history_area" class="hidden grid-cols-1 gap-3">
   </div>
 
 
   <!-- mordel card -->
   <section>
     <!-- Open the modal using ID.showModal() method -->
-    <button id="modal_card" class="btn hidden" onclick="my_modal_1.showModal()">open modal</button>
+    <button id="modal_card" class="btn " onclick="my_modal_1.showModal()">open modal</button>
     <dialog id="my_modal_1" class="modal">
       <div class="modal-box  text-center">
         <h3 class="text-5xl font-bold">Congrates!</h3>
