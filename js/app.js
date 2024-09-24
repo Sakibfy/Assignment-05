@@ -22,6 +22,9 @@ function formatCurrency(amout) {
 }
 
 
+function homeBtn() {
+  location.replace("index.html")
+}
 
 
 
