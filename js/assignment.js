@@ -1,9 +1,9 @@
 // blog btn
-const BlogBtn = document.getElementById('Blog_btn')
-BlogBtn.addEventListener('click', function () {
+document.getElementById('Blog_btn')
+.addEventListener('click', function () {
   window.location.href = 'blog.html'
 
-})
+});
 
 
 
@@ -38,6 +38,9 @@ document.getElementById('donate_btn_first')
     const historyContainer = document.getElementById("history_area");
 
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+
+    // modal card
+    document.getElementById('modal_box').classList.remove("hidden");
     
   });
 
@@ -74,6 +77,9 @@ document.getElementById('donate_btn_sec')
     const historyContainer = document.getElementById("history_area");
 
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+
+    // modal card
+    document.getElementById('modal_box').classList.remove("hidden");
   });
 
 // donate btn 3
@@ -107,7 +113,8 @@ document.getElementById('donate_btn_three')
     const historyContainer = document.getElementById("history_area");
 
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-
+// modal card
+    document.getElementById('modal_box').classList.remove("hidden");
   });
 
 // Donation and History
@@ -172,4 +179,17 @@ document.getElementById("donate_input_three")
     document.getElementById("donate_error_three").classList.remove("hidden");
     return;
   }
+  });
+
+
+// modal 
+document.getElementById('modal_close_btn').addEventListener('click', function () {
+    document.getElementById('modal_box').classList.add("hidden")
+})
+  
+
+
+  document.getElementById('home_btn')
+  .addEventListener('click', function () {
+    window.location.href = '/index.html'
 });

@@ -8,8 +8,6 @@ function inputFieldValue(id) {
 function TextFieldValue(id) {
   const textValue = parseFloat(document.getElementById(id).innerText);
   const donateTitle = parseFloat(document.getElementById(id).innerText);
-  console.log(donateTitle);
-
   return textValue;
 }
 
@@ -24,7 +22,6 @@ function formatCurrency(amout) {
 }
 
 
-const modal = document.getElementById('my_modal_1')
-function showModal() {
-  
-}
+
+
+

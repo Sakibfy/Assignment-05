@@ -56,7 +56,7 @@
     </nav>
   </header>
   <!-- navbar section end-->
-  <div class="flex justify-center gap-4 mt-16 ">
+  <div class="flex justify-center gap-4 mt-16 sticky top-24 backdrop-blur-2xl">
     <button id="Donation" class=" bnt_primary py-2 px-6 rounded-md font-semibold btn_font">Donation</button>
     <button id="History" class="border border-gray-400 py-2 px-6 rounded-md font-semibold btn_font">History</button>
   </div>
@@ -146,7 +146,8 @@
             ⚠️ Invalid !
           </p>
           <button id="donate_btn_three"
-            class="bnt_primary w-full py-4 lg:px-48 btn_font rounded-md font-semibold">Donate Now</button>
+            class="bnt_primary w-full py-4 lg:px-48 btn_font rounded-md font-semibold">Donate
+            Now</button>
         </div>
       </div>
     </div>
@@ -157,25 +158,15 @@
   </div>
 
 
-  <!-- mordel card -->
-  <section>
-    <!-- Open the modal using ID.showModal() method -->
-    <button id="modal_card" class="btn " onclick="my_modal_1.showModal()">open modal</button>
-    <dialog id="my_modal_1" class="modal">
-      <div class="modal-box  text-center">
-        <h3 class="text-5xl font-bold">Congrates!</h3>
-        <img class="pl-52 pt-6" src="./assets/coin.png" alt="">
-        <p class="py-4">You Have Donated for HumanKind</p>
-        <h2 class="font-bold btn_font mt-2">Successfully</h2>
-        <div class="modal-action">
-          <form method="dialog">
-
-            <button class="btn text-center mr-36">Close confirmation</button>
-          </form>
-        </div>
-      </div>
-    </dialog>
-  </section>
+  <!-- modal card -->
+  <div id="modal_box" class="modal-box -mt-96 mx-auto hidden text-center  ">
+    <h3 class="text-5xl font-bold">Congrates!</h3>
+    <img class="pl-52 pt-6" src="./assets/coin.png" alt="">
+    <p class="py-4">You Have Donated for HumanKind</p>
+    <h2 class="font-bold btn_font mt-2">Successfully</h2>
+    <button id="modal_close_btn" class="text-gray-900 font-semibold p-3 rounded-md mt-2">Close
+      confirmation</button>
+  </div>
 
 
 
