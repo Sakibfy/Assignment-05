@@ -1,13 +1,10 @@
-// blog btn
+// blog botton
 document.getElementById('Blog_btn')
 .addEventListener('click', function () {
-  window.location.href = 'blog.html'
-
+  window.location.href = 'blog.html';
 });
 
-
-
-// donate btn 1
+/* donate card conainer  2 */
 document.getElementById('donate_btn_first')
   .addEventListener('click', function () {
     
@@ -27,11 +24,11 @@ document.getElementById('donate_btn_first')
 
     const historyItem = document.createElement("div");
     historyItem.className =
-      "bg-white  h-36 rounded-md p-8  mx-auto mt-8 w-10/12 border border-gary-500 rounded-md";
+      "bg-white  h-36 rounded-md lg:p-8 p-4  mx-auto mt-8 w-11/12 border border-gary-500 rounded-md shadow-black shadow-md";
 
     historyItem.innerHTML = `
            
-    <h2 class="text-2xl text-gray-900 font-bold">${formatCurrency(valueInput)} Taka is Donate for Flood at Noakhali, Bangladesh</h2>
+    <h2 class="lg:text-3xl text-2xl text-gray-900 font-bold">${formatCurrency(valueInput)} Taka is Donate for Flood at Noakhali, Bangladesh</h2>
     <p class="text-xs text-gray-900 mt-3 inline-block">Date: ${new Date()}</p>
           
       `;
@@ -45,7 +42,7 @@ document.getElementById('donate_btn_first')
   });
 
 
-// donate btn 2
+/* donate card conainer  2 */
   
 document.getElementById('donate_btn_sec')
   .addEventListener('click', function () {
@@ -69,21 +66,19 @@ document.getElementById('donate_btn_sec')
 
     const historyItem = document.createElement("div");
     historyItem.className =
-      "bg-white  h-36 rounded-md p-8  mx-auto mt-8 w-10/12 border border-gary-500 rounded-md";
+      "bg-white  h-36 rounded-md lg:p-8 p-4 mx-auto mt-8 w-11/12 border border-gary-500 rounded-md shadow-black shadow-md";
 
     historyItem.innerHTML = `     
-    <h2 class="text-2xl text-gray-900 font-bold">${formatCurrency(valueInput)} Taka is Donate for Flood Relief in Feni,Bangladesh</h2>
+    <h2 class="lg:text-3xl  text-2xl text-gray-900 font-bold">${formatCurrency(valueInput)} Taka is Donate for Flood Relief in Feni,Bangladesh</h2>
     <p class="text-xs text-gray-900 mt-3 inline-block">Date: ${new Date()}</p> `;
     const historyContainer = document.getElementById("history_area");
 
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-
-    // modal card
-    document.getElementById('modal_box').classList.remove("hidden");
+  
   });
 
-// donate btn 3
-  
+/* donate card conainer  3 */
+
 document.getElementById('donate_btn_three')
   .addEventListener('click', function () {
     
@@ -102,19 +97,18 @@ document.getElementById('donate_btn_three')
 
     const historyItem = document.createElement("div");
     historyItem.className =
-      "bg-white  h-36 rounded-md p-8  mx-auto mt-8 w-10/12 border border-gary-500 rounded-md";
+      "bg-white  h-36 rounded-md lg:p-8 p-4 mx-auto mt-8 w-11/12 border border-gary-500 rounded-md shadow-black shadow-md";
 
     historyItem.innerHTML = `
            
-    <h2 class="text-2xl text-gray-900 font-bold">${formatCurrency(valueInput)} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2>
+    <h2 class="lg:text-3xl text-2xl text-gray-900 font-bold">${formatCurrency(valueInput)} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2>
     <p class="text-xs text-gray-900 mt-3 inline-block">Date: ${new Date()}</p>
           
       `;
     const historyContainer = document.getElementById("history_area");
 
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-// modal card
-    document.getElementById('modal_box').classList.remove("hidden");
+
   });
 
 // Donation and History
@@ -143,8 +137,8 @@ donationBtn.addEventListener('click', function () {
   donationBtn.classList.remove('border', 'border-gray-400')
 
   
-  document.getElementById('main_contant').classList.remove('hidden')
- document.getElementById("history_area").classList.add("hidden");
+  document.getElementById('main_contant').classList.remove('hidden');
+  document.getElementById("history_area").classList.add("hidden");
 });
 
 
@@ -158,6 +152,7 @@ document.getElementById("donate_input_first")
     return;
   }
   });
+  
 // live condition check 2
 document.getElementById("donate_input_sec")
   .addEventListener("input", function () {
@@ -186,6 +181,6 @@ document.getElementById("donate_input_three")
 document.getElementById('modal_close_btn').addEventListener('click', function () {
     document.getElementById('modal_box').classList.add("hidden")
 })
-  
+
 
 

@@ -38,8 +38,8 @@
   }
 </style>
 
-<body class="lexend_font body_bg">
-  <header class="sec_bg w-full h-24 border border-sec_bg  backdrop-saturate-200 sec_bg/30  sticky top-0 ">
+<body class="lexend_font body_bg ">
+  <header class="sec_bg w-full h-24 border border-sec_bg  backdrop-saturate-50 sec_bg/30  sticky top-0 z-20">
     <!-- navbar section start -->
     <nav class=" my-6 mx-3 lg:mx-36 flex justify-between">
       <button id="Blog_btn"
@@ -51,21 +51,22 @@
       </div>
       <div class="flex items-center">
         <img src="./assets/coin.png" alt="">
-        <button class="pl-3 font-medium  lg:btn_font text-gray-400"><span id="Reduce_Btn">5500</span> BDT</button>
+        <button class="pl-3 font-medium  lg:btn_font text-gray-400"><span id="Reduce_Btn">10000</span> BDT</button>
       </div>
     </nav>
   </header>
+
   <!-- navbar section end-->
-  <div class="flex justify-center gap-4 mt-16 sticky top-24 backdrop-blur-2xl">
+  <div class="flex justify-center gap-4 mt-16 sticky top-24 backdrop-blur-2xl z-10">
     <button id="Donation" class=" bnt_primary py-2 px-6 rounded-md font-semibold btn_font">Donation</button>
     <button id="History" class="border border-gray-400 py-2 px-6 rounded-md font-semibold btn_font">History</button>
   </div>
   <!-- top 2 botton end-->
 
   <!-- Main section -->
-  <main id="main_contant" class="lg:w-10/12 mt-20 mx-auto w-11/12">
+  <main id="main_contant" class="lg:w-10/12 mt-20 mx-auto w-11/12 relative ">
     <!-- card 1 -->
-    <div class="mb-10">
+    <div class="mb-10 ">
       <div class="hero border border-gray-400 rounded-md shadow  hero-content flex-col lg:flex-row ">
         <img src="./assets/noakhali.png" class="" />
         <div class=" space-y-4  lg:ml-8">
@@ -94,7 +95,7 @@
       </div>
     </div>
     <!-- card 2 -->
-    <div class="mb-10">
+    <div class="mb-10 ">
       <div class="hero border border-gray-400 rounded-md shadow  hero-content flex-col lg:flex-row ">
         <img src="./assets/feni.png" class="" />
         <div class=" space-y-4  lg:ml-8">
@@ -123,7 +124,7 @@
       </div>
     </div>
     <!-- card 3 -->
-    <div id="contant_three" class="mb-10">
+    <div id="contant_three" class="mb-10 ">
       <div class="hero border border-gray-400 rounded-md shadow  hero-content flex-col lg:flex-row ">
         <img src="./assets/quota-protest.png" class="" />
         <div class=" space-y-6  lg:ml-8">
@@ -152,23 +153,23 @@
       </div>
     </div>
   </main>
+
   <!-- history section -->
-
-  <div id="history_area" class="hidden grid-cols-1 gap-3">
+  <div id="history_area" class="hidden grid-cols-1 gap-2 mb-4">
   </div>
-
-
-  <!-- modal card -->
-  <div id="modal_box" class="modal-box -mt-96 mx-auto hidden text-center  ">
-    <h3 class="text-5xl font-bold">Congrates!</h3>
-    <img class="pl-52 pt-6" src="./assets/coin.png" alt="">
-    <p class="py-4">You Have Donated for HumanKind</p>
-    <h2 class="font-bold btn_font mt-2">Successfully</h2>
-    <button id="modal_close_btn" class="text-gray-900 font-semibold p-3 rounded-md mt-2">Close
-      confirmation</button>
+  <!-- madol card -->
+  <div id="modal_box"
+    class="modal-box lg:top-56 top-[530px] hidden  mx-auto   items-center z-20 absolute inset-0 h-80 transition-all  lg:w-full w-8/12  duration-500 shadow-black shadow-2xl sec_bg">
+    <div class="text-center ">
+      <h3 class="lg:text-5xl text-4xl font-bold">Congrates!</h3>
+      <img class="lg:pl-52 pl-28 pt-6" src="./assets/coin.png" alt="">
+      <p class="py-4">You Have Donated for HumanKind</p>
+      <h2 class="font-bold btn_font my-2">Successfully</h2>
+      <button id="modal_close_btn"
+        class="hover:bg-neutral-400 bg-stone-300 duration-300 font-semibold p-3 rounded-md mt-2 text-gray-600 hover:text-stone-300">Close
+        Confirmation</button>
+    </div>
   </div>
-
-
 
 
   <script src="./js/app.js"></script>

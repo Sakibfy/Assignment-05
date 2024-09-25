@@ -16,12 +16,12 @@ function reduceAmount(id) {
   return amountReduceBtn;
 }
 
-
+// history
 function formatCurrency(amout) {
   return `${amout}`;
 }
 
-
+// home 
 function homeBtn() {
   location.replace("index.html")
 }
