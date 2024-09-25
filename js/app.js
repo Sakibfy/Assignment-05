@@ -20,7 +20,6 @@ function reduceAmount(id) {
 function formatCurrency(amout) {
   return `${amout}`;
 }
-
 // home 
 function homeBtn() {
   location.replace("index.html")

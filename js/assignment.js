@@ -19,7 +19,6 @@ document.getElementById('donate_btn_first')
     const newReduceAmount = totalAmountreduceBtn - valueInput;
     document.getElementById('Reduce_Btn').innerText = newReduceAmount;
 
-
     // history Create div 1
 
     const historyItem = document.createElement("div");
@@ -29,11 +28,8 @@ document.getElementById('donate_btn_first')
     historyItem.innerHTML = `
            
     <h2 class="lg:text-3xl text-2xl text-gray-900 font-bold">${formatCurrency(valueInput)} Taka is Donate for Flood at Noakhali, Bangladesh</h2>
-    <p class="text-xs text-gray-900 mt-3 inline-block">Date: ${new Date()}</p>
-          
-      `;
+    <p class="text-xs text-gray-900 mt-3 inline-block">Date: ${new Date()}</p>`;
     const historyContainer = document.getElementById("history_area");
-
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
 
     // modal card
@@ -41,26 +37,20 @@ document.getElementById('donate_btn_first')
     
   });
 
-
 /* donate card conainer  2 */
   
 document.getElementById('donate_btn_sec')
   .addEventListener('click', function () {
     
     const valueInput = inputFieldValue('donate_input_sec');
-
     const donateTotalAmount = TextFieldValue('donate_total_amount_sec');
-    
     const newAmount = donateTotalAmount + valueInput;
-    
     document.getElementById('donate_total_amount_sec').innerText = newAmount;
-
     // Reduce Btn
     const totalAmountreduceBtn = reduceAmount('Reduce_Btn');
     
     const newReduceAmount = totalAmountreduceBtn - valueInput;
     document.getElementById('Reduce_Btn').innerText = newReduceAmount;
-
 
      // history Create div 2
 
@@ -74,7 +64,7 @@ document.getElementById('donate_btn_sec')
     const historyContainer = document.getElementById("history_area");
 
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-  
+
   });
 
 /* donate card conainer  3 */
@@ -92,19 +82,14 @@ document.getElementById('donate_btn_three')
     const newReduceAmount = totalAmountreduceBtn - valueInput;
     document.getElementById('Reduce_Btn').innerText = newReduceAmount;
 
-
  // history Create div 3
 
     const historyItem = document.createElement("div");
     historyItem.className =
       "bg-white  h-36 rounded-md lg:p-8 p-4 mx-auto mt-8 w-11/12 border border-gary-500 rounded-md shadow-black shadow-md";
-
-    historyItem.innerHTML = `
-           
+    historyItem.innerHTML = `        
     <h2 class="lg:text-3xl text-2xl text-gray-900 font-bold">${formatCurrency(valueInput)} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2>
-    <p class="text-xs text-gray-900 mt-3 inline-block">Date: ${new Date()}</p>
-          
-      `;
+    <p class="text-xs text-gray-900 mt-3 inline-block">Date: ${new Date()}</p>`;
     const historyContainer = document.getElementById("history_area");
 
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
@@ -112,7 +97,6 @@ document.getElementById('donate_btn_three')
   });
 
 // Donation and History
-  
 const donationBtn = document.getElementById('Donation')
 const historyBtn = document.getElementById('History')
 historyBtn.addEventListener('click', function () {
@@ -141,7 +125,6 @@ donationBtn.addEventListener('click', function () {
   document.getElementById("history_area").classList.add("hidden");
 });
 
-
 // live condition check
 document.getElementById("donate_input_first")
   .addEventListener("input", function () {
@@ -163,9 +146,7 @@ document.getElementById("donate_input_sec")
     return;
   }
   });
-
 // live condition check 3
-
 document.getElementById("donate_input_three")
   .addEventListener("input", function () {
   const inputValue = parseFloat(document.getElementById("donate_input_three").value);
@@ -175,8 +156,6 @@ document.getElementById("donate_input_three")
     return;
   }
   });
-
-
 // modal 
 document.getElementById('modal_close_btn').addEventListener('click', function () {
     document.getElementById('modal_box').classList.add("hidden")
